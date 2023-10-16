@@ -3,7 +3,7 @@ mongoose.set('strictQuery',true)
 
 //conectar com o Mongo Atlas
 async function main(){
-    await mongoose.connect('LINK_BANCO')
+    await mongoose.connect('mongodb+srv://gustavoweb:<SENHA>@cluster0.xyzz1kz.mongodb.net/?retryWrites=true&w=majority')
     console.log('conectado ao MongoDB!')
 }
 
