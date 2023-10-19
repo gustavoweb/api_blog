@@ -11,3 +11,13 @@ exports.cadastrarPost = async (req, res) => {
       res.status(500).json({ error: 'Erro ao cadastrar o post' })
     }
   }
+
+  // Listar todas as perguntas
+  exports.listarPosts = async (req, res) => {
+    try {
+      const ListaPosts = await Posts.find()
+      res.json(ListaPosts)
+    } catch (error) {
+      res.status(500).json({ error: 'Erro ao buscar as perguntas' })
+    }
+  }
