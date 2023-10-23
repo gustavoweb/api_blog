@@ -3,7 +3,7 @@ mongoose.set('strictQuery',true)
 
 //conectar com o Mongo Atlas
 async function main(){
-    await mongoose.connect('<LINK_DO_BANCO>')
+    await mongoose.connect('<BANCO>')
     console.log('conectado ao Mongo!')
 }
 
